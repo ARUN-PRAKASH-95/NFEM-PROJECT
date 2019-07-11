@@ -8,7 +8,7 @@ Global_plastic_strain = np.zeros((n,3,1))
 Global_displacement = np.zeros((n+1,1)) 
 Reduced_displacement = np.delete(Global_displacement,(0),axis=0)
 sigma_rr_ri = []
-fig,ax = plt.subplots(nrows=2,ncols=2,figsize=(10,5))
+fig,ax = plt.subplots(nrows=2,ncols=2,figsize=(15,10))
 for time,tau in enumerate(t):
     Global_displacement[0]=1/3*tau*(-volumetric_strain)*Inner_radius
     print((time+1),''+'-'*100)
@@ -24,7 +24,6 @@ for time,tau in enumerate(t):
         Global_F_int= np.zeros((n+1,1))
         print("NEWT")
         for i in range(len(coordinate)-1):
-
             def element_routine(coordinate,Lambda,mu,tau):
                 Derivative_N = np.array([-1/2,1/2])
                 Jacobian = Derivative_N@np.array([[coordinate[i]],
@@ -36,9 +35,10 @@ for time,tau in enumerate(t):
                               [1/(coordinate[i]+coordinate[i+1]),1/(coordinate[i]+coordinate[i+1])]])
                 B_T = np.transpose(B)
                 C_matrix,I_stress = material_routine(coordinate)
-                Element_stiffness = 2*(B_T@C_matrix@B)*Jacobian*((coordinate[i]+coordinate[i+1])/2)**2
-                Internal_force = 2*(B_T@I_stress)*Jacobian*((coordinate[i]+coordinate[i+1])/2)**2
+                Element_stiffness = Gauss_weight*(B_T@C_matrix@B)*Jacobian*((coordinate[i]+coordinate[i+1])/2)**2
+                Internal_force = Gauss_weight*(B_T@I_stress)*Jacobian*((coordinate[i]+coordinate[i+1])/2)**2
                 return Element_stiffness,Internal_force
+            
             
 
 
@@ -109,22 +109,30 @@ for time,tau in enumerate(t):
     Global_plastic_strain=plastic_strain
     
 ax[0,0].plot(coordinate,sigma_rr)
-ax[0,0].set_title('Sigma_rr Stress Plot',pad=20)
-ax[0,0].set_xlabel('Radius')
-ax[0,0].set_ylabel('Sigma_rr')
+#ax[0,0].scatter(coordinate,sigma_rr)
+ax[0,0].set_title('$\sigma_{rr}$ Stress Plot',fontsize = 20)
+ax[0,0].set_xlabel('Radius',fontsize=15)
+ax[0,0].set_ylabel('$\sigma_{rr}$',fontsize=15)
+ax[0,0].grid()
 ax[0,1].plot(coordinate,Global_displacement)
-ax[0,1].set_title('Displacement Plot')
-ax[0,1].set_xlabel('Radius')
-ax[0,1].set_ylabel('Displacement')
+#ax[0,1].scatter(coordinate,Global_displacement)
+ax[0,1].set_title('Displacement Plot',fontsize = 20)
+ax[0,1].set_xlabel('Radius',fontsize=15)
+ax[0,1].set_ylabel('Displacement',fontsize=15)
+ax[0,1].grid()
 ax[1,0].plot(coordinate,sigma_phi)
-ax[1,0].set_title('Sigma_phi Stress plot')
-ax[1,0].set_xlabel('Radius')
-ax[1,0].set_ylabel('Sigma_phi')
+#ax[1,0].scatter(coordinate,sigma_phi)
+ax[1,0].set_title('$\sigma_{\phi\phi}$ Stress plot',fontsize = 20)
+ax[1,0].set_xlabel('Radius',fontsize=15)
+ax[1,0].set_ylabel('$\sigma_{\phi\phi}$',fontsize=15)
+ax[1,0].grid()
 ax[1,1].plot(t,sigma_rr_ri)
-ax[1,1].set_title('Stress at inner most node')
-ax[1,1].set_xlabel('No of iterations')
-ax[1,1].set_ylabel('sigma_rr_ri')
+ax[1,1].set_title('Stress at inner most node',fontsize = 20)
+ax[1,1].set_xlabel('No of iterations',fontsize=15)
+ax[1,1].set_ylabel('$\sigma_{rr}  (r=r_i)$',fontsize=15)
+ax[1,1].grid()
 plt.tight_layout()
+
 # plt.show()
 plt.savefig('plots.png')
 

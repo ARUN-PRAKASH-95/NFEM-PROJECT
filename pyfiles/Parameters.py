@@ -9,11 +9,11 @@ mu = E/(2*(1+poissons_ratio))
 Lambda=poissons_ratio*E/((1-2*poissons_ratio)*(1+poissons_ratio))
 volumetric_strain = -0.01
 yield_stress = 100e-6 #N/micromm^2
-
+Gauss_weight = 2
 # Mesh generation
 Inner_radius = 25
 Outer_radius = 100
-n=10
+n=100
 meshrefinementfactor = 5
 q=meshrefinementfactor**(1/(n-1))
 
