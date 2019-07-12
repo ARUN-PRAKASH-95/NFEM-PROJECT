@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-step = 0.01
+step = 0.075
 t=np.arange(step,1,step)
 
 poissons_ratio = 0.3
@@ -13,7 +13,7 @@ Gauss_weight = 2
 # Mesh generation
 Inner_radius = 25
 Outer_radius = 100
-n=100
+n=36
 meshrefinementfactor = 5
 q=meshrefinementfactor**(1/(n-1))
 

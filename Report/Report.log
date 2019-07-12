@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.26)  11 JUL 2019 19:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.26)  12 JUL 2019 14:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -140,18 +140,18 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 ) (./Report.aux)
 \openout1 = `Report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count103
@@ -254,7 +254,7 @@ e
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 15--18
+Underfull \hbox (badness 10000) in paragraph at lines 19--22
 
  []
 
@@ -262,44 +262,82 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--18
 <"NFEM Flowchart (1)".jpeg, id=22, 603.90619pt x 736.70232pt>
 File: "NFEM Flowchart (1)".jpeg Graphic file (type jpg)
 <use "NFEM Flowchart (1)".jpeg>
-Package pdftex.def Info: "NFEM Flowchart (1)".jpeg  used on input line 97.
-(pdftex.def)             Requested size: 397.31776pt x 484.70747pt.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 103.
+Package pdftex.def Info: "NFEM Flowchart (1)".jpeg  used on input line 114.
+(pdftex.def)             Requested size: 405.51163pt x 494.70087pt.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 119.
 
  (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 103.
- [4 <./NFEM Flowchart (1).jpeg>]
-<"Materialroutine".jpeg, id=26, 532.99126pt x 442.20206pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 119.
+<"Materialroutine".jpeg, id=23, 532.99126pt x 442.20206pt>
 File: "Materialroutine".jpeg Graphic file (type jpg)
 <use "Materialroutine".jpeg>
-Package pdftex.def Info: "Materialroutine".jpeg  used on input line 113.
+Package pdftex.def Info: "Materialroutine".jpeg  used on input line 128.
 (pdftex.def)             Requested size: 397.31776pt x 329.64673pt.
- [5 <./Materialroutine.jpeg>] [6] (./Report.aux) ) 
+ [4] [5 <./NFEM Flowchart (1).jpeg>] [6 <./Materialroutine.jpeg>]
+<"Elastic2".png, id=33, 722.7pt x 361.35pt>
+File: "Elastic2".png Graphic file (type png)
+<use "Elastic2".png>
+Package pdftex.def Info: "Elastic2".png  used on input line 143.
+(pdftex.def)             Requested size: 389.1239pt x 194.56369pt.
+<"Elastic".png, id=35, 722.7pt x 361.35pt>
+File: "Elastic".png Graphic file (type png)
+<use "Elastic".png>
+Package pdftex.def Info: "Elastic".png  used on input line 147.
+(pdftex.def)             Requested size: 389.1239pt x 194.56369pt.
+<"Trend".png, id=36, 462.528pt x 346.896pt>
+File: "Trend".png Graphic file (type png)
+<use "Trend".png>
+Package pdftex.def Info: "Trend".png  used on input line 153.
+(pdftex.def)             Requested size: 389.1239pt x 291.85645pt.
+<"Result3b_a".png, id=37, 1084.05pt x 722.7pt>
+File: "Result3b_a".png Graphic file (type png)
+<use "Result3b_a".png>
+Package pdftex.def Info: "Result3b_a".png  used on input line 157.
+(pdftex.def)             Requested size: 389.1239pt x 259.4109pt.
+<"Result3b_b".png, id=38, 1084.05pt x 722.7pt>
+File: "Result3b_b".png Graphic file (type png)
+<use "Result3b_b".png>
+Package pdftex.def Info: "Result3b_b".png  used on input line 163.
+(pdftex.def)             Requested size: 389.1239pt x 259.4109pt.
+ [7 <./Elastic2.png>]
+<"Result4".png, id=44, 1084.05pt x 722.7pt>
+File: "Result4".png Graphic file (type png)
+<use "Result4".png>
+Package pdftex.def Info: "Result4".png  used on input line 170.
+(pdftex.def)             Requested size: 389.1239pt x 259.4109pt.
+<"Polardisplacement".png, id=45, 462.528pt x 346.896pt>
+File: "Polardisplacement".png Graphic file (type png)
+<use "Polardisplacement".png>
+Package pdftex.def Info: "Polardisplacement".png  used on input line 174.
+(pdftex.def)             Requested size: 389.1239pt x 291.85645pt.
+
+[8 <./Elastic.png>] [9 <./Trend.png> <./Result3b_a.png>] [10 <./Result3b_b.png>
+ <./Result4.png>] [11 <./Polardisplacement.png>] (./Report.aux) ) 
 Here is how much of TeX's memory you used:
- 2613 strings out of 494880
- 35980 string characters out of 6179601
- 102323 words of memory out of 5000000
- 5908 multiletter control sequences out of 15000+600000
- 9626 words of font info for 35 fonts, out of 8000000 for 9000
+ 2650 strings out of 494880
+ 36650 string characters out of 6179601
+ 103323 words of memory out of 5000000
+ 5937 multiletter control sequences out of 15000+600000
+ 9933 words of font info for 36 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 41i,7n,25p,494b,281s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on Report.pdf (6 pages, 280095 bytes).
+ 41i,7n,25p,995b,283s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on Report.pdf (11 pages, 932247 bytes).
 PDF statistics:
- 65 PDF objects out of 1000 (max. 8388607)
- 44 compressed objects within 1 object stream
+ 97 PDF objects out of 1000 (max. 8388607)
+ 57 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
